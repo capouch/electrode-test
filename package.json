@@ -1,0 +1,50 @@
+{
+  "name": "electrode-test",
+  "version": "0.0.1",
+  "description": "Working through the getting started guide",
+  "homepage": "github.com/capouch",
+  "author": {
+    "name": "Brian Capouch",
+    "email": "brianc@palaver.net",
+    "url": "https://www.scene-history.org"
+  },
+  "contributors": [],
+  "files": [
+    "server",
+    "client",
+    "test"
+  ],
+  "main": "server/index.js",
+  "keywords": [
+    "playing-around"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "capouch/electrode-test"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "^4.x.x || ^6.x.x",
+    "npm": ">= 3.x.x"
+  },
+  "scripts": {
+    "start": "if test \"$NODE_ENV\" = \"production\"; then npm run prod; else gulp dev; fi",
+    "test": "gulp test",
+    "coverage": "gulp check",
+    "prod": "echo 'Starting standalone server in PROD mode'; node .",
+    "heroku-postbuild": "gulp build"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "electrode-archetype-react-app": "^1.0.0",
+    "electrode-confippet": "^1.0.0",
+    "electrode-router-resolver-engine": "^1.0.0",
+    "electrode-server": "^1.0.0",
+    "electrode-static-paths": "^1.0.0",
+    "lodash": "^4.10.1"
+  },
+  "devDependencies": {
+    "electrode-archetype-react-app-dev": "^1.0.0",
+    "gulp": "^3.9.1"
+  }
+}
