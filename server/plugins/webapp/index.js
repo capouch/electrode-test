@@ -135,7 +135,7 @@ function makeRouteHandler(options, userContent) {
 const registerRoutes = (server, options, next) => {
 
   const pluginOptionsDefaults = {
-    pageTitle: "Untitled Electrode Web Application",
+    pageTitle: "Electrode Sample Web Application",
     webpackDev: process.env.WEBPACK_DEV === "true",
     renderJS: true,
     serverSideRendering: true,
