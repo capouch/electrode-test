@@ -8,6 +8,9 @@
     "email": "brianc@palaver.net",
     "url": "https://www.scene-history.org"
   },
+  "engines": {
+     "node": "6.3.x"
+   },
   "contributors": [],
   "files": [
     "server",
